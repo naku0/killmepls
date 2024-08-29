@@ -1,0 +1,14 @@
+@import "colors";
+
+.button{
+    background-color: $background-white;
+    padding: 5px 20px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: 2px solid $dark-red;
+    border-radius: 30px;
+}
+.button:hover{
+    background-color: darken($background-white, 10%);
+    cursor: pointer;
+}

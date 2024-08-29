@@ -1,0 +1,44 @@
+@import "colors";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+
+.loginForm{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainHr{
+    border-top: 2px solid $dark-red;
+    width: 20%;
+}
+
+.otherHr{
+    border-top: 1px solid $background-black;
+    width: 10%;
+}
+
+.h{
+    color: $background-black;
+    font-size: 4rem;
+}
+
+.p{
+    padding-top: 10px;
+}
+
+
+
+.link:hover{
+    color: $light-red;
+}
+
+

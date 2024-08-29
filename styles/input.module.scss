@@ -1,0 +1,62 @@
+@import "colors";
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.input{
+    background-color: transparent;
+    padding: 10px 30px 10px 5px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid $background-black;
+    font-size: 1em;
+}
+
+.inputError{
+    @extend .input;
+    border-bottom: 2px solid $light-red;
+}
+
+.label{
+    position: absolute;
+    left: 5%;
+    pointer-events: none;
+    color: $background-black;
+    transition: all 0.3s ease;
+}
+
+.input:focus ~ .label,
+.input:valid ~ .label{
+    transform: translateY(-20px);
+    font-size: 0.8em;
+    color: $background-black;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+
+    svg{
+        width: 20px;
+        height: 20px;
+        transition: all 0.3s ease;
+        position: absolute;
+        right: 1%;
+    }
+    svg:hover{
+        fill: $dark-red;
+    }
+}

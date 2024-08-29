@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import "colors";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+body{
+    height: 100svh;
+    width: 100svw;
+    background-color: $background-white;
+}
+
