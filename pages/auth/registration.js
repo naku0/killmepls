@@ -5,6 +5,7 @@ import {Button} from "../../props/Button";
 import button from "../../styles/button.module.scss";
 import A from "../../props/A";
 import {useState} from "react";
+import {post} from "../../api/request";
 
 const Registration = () =>{
     const [username, setUsername] = useState('');
@@ -34,7 +35,7 @@ const Registration = () =>{
             setError('Username or password too long!');
             return;
         }
-        alert("ok")
+        post({username: currentUsername, password: currentPassword}, '/auth/login');
     }
 
     return (
